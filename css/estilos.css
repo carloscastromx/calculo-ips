@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #1e3c72;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.box{
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+    min-height: 400px;
+    max-height: 50vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px
+}
+.inputs-ip, .data-ip, .button-calcular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs-ip p, .data-ip p{
+    margin-right: 8px;
+}
+.inputs-ip span{
+    font-size: 25px;
+    margin:0 5px;
+}
+#datos-ip{
+    display: none;
+}
+.data-ip input{
+    width: 105px;
+    text-align: center;
+    background: #d9d9d9;
+    border: 1px solid #d9d9d9;
+}
+.box .input-ip-calc{
+    margin: 15px 0;
+}
+.button-calcular button{
+    background-color: #2a5298;
+    border: 1px solid #2a5298;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.button-calcular button:hover{
+    background-color: white;
+    color: #2a5298;
+}
+#datos-ip .data-ip:nth-child(1) {
+  margin-bottom: 10px;
+}
+#calc-msg > p{
+  text-align: center;
+  margin-top: 15px;
+}
+#calc-msg p.error-msg{
+    color: #c80000;
+}
+#calc-msg p.result-msg{
+  color: #2a5298;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  max-width: 60px;
+  text-align: center;
+}
